@@ -77,8 +77,7 @@ The **EDA** phase helps uncover patterns, trends, and anomalies within the datas
 
 ## 🤖 Models
 
-The modeling phase focuses on predicting the top 12 articles each customer is most likely to purchase in the 7-day prediction window after the training period.  
-Multiple modeling strategies were explored, ranging from simple baselines to advanced hybrid recommendation systems.
+The modeling phase focuses on predicting the top 12 articles each customer is most likely to purchase in the 7-day prediction window after the training period. Multiple modeling strategies will be explored, ranging from simple baselines to advanced hybrid recommendation systems.
 
 ### 🏗️ Modeling Approaches
 
@@ -93,5 +92,3 @@ Multiple modeling strategies were explored, ranging from simple baselines to adv
 
 ### 📌 Key Insights
 - Recency plays a strong role—recent purchases are highly predictive of next purchases.
-
----
