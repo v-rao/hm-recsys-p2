@@ -73,30 +73,25 @@ The **EDA** phase helps uncover patterns, trends, and anomalies within the datas
 - Highlighted data cleaning needs before modeling.
 - Better understanding of customer-product relationships for recommendation strategies.
 
-
-## 🧰 Features & Tools
-
-This project includes the following methodologies:
-
-- **Collaborative Filtering** with matrix factorization
-- **Content-Based Filtering** using article metadata
-- **NLP** on product descriptions using Transformer models
-- **Image Embeddings** using pretrained CNNs (e.g., ResNet, EfficientNet)
-- **Hybrid Modeling** combining user behavior, text, and images
-- **Candidate Generation + Ranking Pipeline** for efficient recommendation
-
 ---
 
-## 📊 Evaluation Metric
+## 🤖 Models
 
-The competition uses **Mean Average Precision at 12 (MAP@12)** as the evaluation metric. Only customers who made purchases during the prediction week are evaluated.
+The modeling phase focuses on predicting the top 12 articles each customer is most likely to purchase in the 7-day prediction window after the training period.  
+Multiple modeling strategies were explored, ranging from simple baselines to advanced hybrid recommendation systems.
+
+### 🏗️ Modeling Approaches
+
+1. **Baseline Models**
+   - **Popularity-based**: Recommend the most purchased articles from the recent weeks for all customers.
+
+### ⚙️ Model Training
+- Training data was split temporally, ensuring validation sets simulate the prediction window.
+
+### 📏 Evaluation
+- Models were evaluated using **Mean Average Precision at 12 (MAP@12)**.
+
+### 📌 Key Insights
+- Recency plays a strong role—recent purchases are highly predictive of next purchases.
 
 ---
-
-## 🧪 Getting Started
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/hm-fashion-recommendation.git
-   cd hm-fashion-recommendation
